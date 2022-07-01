@@ -1,0 +1,58 @@
+:root {
+  --background-primary: #ebebeb;
+  --splash-primary: #2c2c2c;
+  --text-primary: #242424;
+  --text-white: #ebebeb;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-primary: #2c2c2c;
+    --splash-primary: #ebebeb;
+    --text-primary: #ebebeb;
+  }
+}
+
+body {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.splash {
+  width: 40%;  
+  position: relative;
+
+  /* background image */
+  background: url(background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /* fallback */
+  background-color:var(--splash-primary);
+}
+
+.splash-caption {
+  /* centering of caption */ 
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+
+  /* styling */
+  margin-bottom: 10px;
+  color: var(--text-white);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+}
+
+.splash-caption a {
+  /* Override visited and unvisited coloring */
+  color: var(--text-white);
+}
+
+.signup {
+  width: 60%;
+  background-color: var(--background-primary);
+}
