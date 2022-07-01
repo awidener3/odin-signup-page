@@ -25,12 +25,34 @@ body {
   position: relative;
 
   /* background image */
-  background: url(background.jpg);
+  background: url(images/background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 
   /* fallback */
   background-color:var(--splash-primary);
+}
+
+.title-backdrop {
+  width: 100%;
+  margin-top: 30%;
+  background-color: rgba(0, 0, 0, 0.7);
+
+  /* child positioning */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title-logo {
+  margin: 20px 15px;
+  height: 125px;
+}
+
+.title {
+  font-size: 4rem;
+  padding: 10px;
+  color: var(--text-white);
 }
 
 .splash-caption {
