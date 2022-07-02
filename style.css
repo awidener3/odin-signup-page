@@ -12,6 +12,8 @@
   --text-primary: #242424;
   --text-white: #ebebeb;
   --color-purple: #4d37af;
+  --color-invalid: #ff0000;
+  --color-valid: #008000;
   --box-shadow: 3px 3px 5px #0000004f;
   --input-border: 1px solid #a0a0a0;
   --input-background: #fff;
@@ -107,6 +109,14 @@ input:focus, input:focus-visible {
   border: 1px solid var(--color-purple);
   box-shadow: var(--box-shadow);
 }
+
+/* input:not(:focus):not(:placeholder-shown):invalid {
+  border-color: var(--color-invalid);
+}
+
+input:not(:focus):not(:placeholder-shown):valid {
+  border-color: var(--color-valid);
+} */
 
 /* splash side */
 .splash {
@@ -206,6 +216,8 @@ input:focus, input:focus-visible {
 }
 
 .col {
+  /* positioning for checkmark */
+  position: relative;
   margin-right: 40px;
 }
 
@@ -213,6 +225,22 @@ input:focus, input:focus-visible {
 .required::after {
   content: ' *';
   color: red;
+}
+
+.xmark {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 7px;
+  color: red;
+}
+
+.checkmark {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 7px;
+  color: green;
 }
 
 /* create account button */
