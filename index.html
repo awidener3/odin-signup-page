@@ -15,7 +15,7 @@
 
     <div class="title-backdrop">
       <img class="title-logo" src="images/odin-lined.png" alt="">
-      <h1 class="title">Space Odin</h1>
+      <h1 class="title"> Odin</h1>
     </div>
 
     <figcaption class="splash-caption">
@@ -27,10 +27,55 @@
   </figure>
 
   <section class="signup">
-    <h1>Form</h1>
-    <h2>Subtitle</h2>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt sit facere quo itaque ex! Sapiente fugiat, a
-      inventore et iusto quos quas asperiores quo.</p>
+    <div class="call-to-action">
+      <p>
+        This is not a real online service! You know you need something like this in your life to help you realize your
+        deepest dreams. <br> Sign up <em>now</em> to get started.
+      </p>
+      <p>You <em>know</em> you want to.</p>
+    </div>
+
+    <form id="signup-form">
+      <h2>Let's do this!</h2>
+
+      <div class="row">
+        <div class="col">
+          <label for="first_name" class="required">First Name</label>
+          <input type="text" name="first_name" id="first-name" placeholder="John" required>
+        </div>
+        <div class="col">
+          <label for="last_name" class="required">Last Name</label>
+          <input type="text" name="last_name" id="last-name" placeholder="Doe" required>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <label for="email" class="required">Email</label>
+          <input type="email" name="email" id="email" placeholder="johndoe@mail.com" required>
+        </div>
+        <div class="col">
+          <label for="phone_number">Phone Number</label>
+          <input type="tel" name="phone_number" id="phone-number" placeholder="123-456-7890">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <label for="password" class="required">Password</label>
+          <input type="password" name="password" id="password" placeholder="Enter password..." required>
+        </div>
+        <div class="col">
+          <label for="confirm_password" class="required">Confirm Password</label>
+          <input type="password" name="confirm_password" id="confirm_password" placeholder="Enter same password..."
+            required>
+        </div>
+      </div>
+    </form>
+
+    <button class="btn">Create Account</button>
+
+    <p class="login">Already have an account? <a href="*">Log in</a></p>
   </section>
 
 
